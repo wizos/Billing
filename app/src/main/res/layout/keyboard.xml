@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:id="@+id/key"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/key_btn_style"
+                android:onClick="onNumKeyClicked"
+                android:tag="1"
+                android:text="1" />
+            <Button
+                style="@style/key_btn_style"
+                android:onClick="onNumKeyClicked"
+                android:tag="2"
+                android:text="2" />
+            <Button
+                style="@style/key_btn_style"
+                android:onClick="onNumKeyClicked"
+                android:tag="3"
+                android:text="3" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_delete"
+                android:gravity="center"
+                android:onClick="onDeleteKeyClicked" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/key_btn_style"
+                android:onClick="onNumKeyClicked"
+                android:tag="4"
+                android:text="4" />
+            <Button
+                style="@style/key_btn_style"
+                android:onClick="onNumKeyClicked"
+                android:tag="5"
+                android:text="5" />
+            <Button
+                style="@style/key_btn_style"
+                android:onClick="onNumKeyClicked"
+                android:tag="6"
+                android:text="6" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_clear"
+                android:gravity="center"
+                android:onClick="onClearKeyClicked"
+                android:tag="C" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/key_btn_style"
+                        android:onClick="onNumKeyClicked"
+                        android:tag="7"
+                        android:text="7"/>
+                    <Button
+                        style="@style/key_btn_style"
+                        android:onClick="onNumKeyClicked"
+                        android:tag="8"
+                        android:text="8"/>
+                    <Button
+                        style="@style/key_btn_style"
+                        android:onClick="onNumKeyClicked"
+                        android:tag="9"
+                        android:text="9"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/key_btn_style"
+                        android:onClick="onNumKeyClicked"
+                        android:tag="+"
+                        android:text="+" />
+                    <Button
+                        style="@style/key_btn_style"
+                        android:onClick="onNumKeyClicked"
+                        android:tag="0"
+                        android:text="0"/>
+                    <Button
+                        style="@style/key_btn_style"
+                        android:onClick="onNumKeyClicked"
+                        android:tag="."
+                        android:text="."/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/close_normal"
+                android:gravity="center"
+                android:onClick="onCloseKeyClicked" />
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_submit"
+                android:gravity="center"
+                android:visibility="gone"
+                android:onClick="onSubmitKeyClicked" />
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_equal"
+                android:gravity="center"
+                android:visibility="gone"
+                android:onClick="onEqualKeyClicked" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

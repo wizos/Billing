@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="slv_item_height">50dip</dimen>
+
+    <dimen name="slv_menu_left_width">28dip</dimen>
+    <dimen name="slv_menu_right_width">22dip</dimen>
+
+    <dimen name="txt_size">6sp</dimen>
+    <dimen name="slv_menu_txt">6sp</dimen>
+    <dimen name="keyboard_txt_size">20sp</dimen>
+    <dimen name="start_pull">25dp</dimen>
+    <dimen name="gridview_vertical_pacing">4dp</dimen>
+
+
+
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <dimen name="pickerview_textsize">20sp</dimen>
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Billorcs</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_bill">BillActivity</string>
+    <string name="title_activity_charge">ChargeActivity</string>
+    <string name="title_today">今日</string>
+    <string name="title_account_count">账户</string>
+    <string name="title_type_count">账目</string>
+    <string name="payout">支出</string>
+    <string name="income">收入</string>
+    <string name="balace">余额</string>
+    <!--<string name="type_button">支出</string>-->
+    <string name="money_count">金额</string>
+    <string name="moneyHint">花了多少钱？</string>
+    <string name="remark">备注一下</string>
+    <string name="chooseIcon">类型icon</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+</resources>

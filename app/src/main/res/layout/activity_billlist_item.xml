@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bill_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/slv_item_height"
+    android:background="@android:color/transparent"
+    tools:ShowIn="@layout/activity_bill">
+    <!--MarginStart指的是控件距离开头View部分的间距大小，MarginLeft则指的是控件距离左边View部分的间距大小，MarginEnd和MarginRight同理。-->
+    <!--一般情况下，View开始部分就是左边，但是有的语言目前为止还是按照从右往左的顺序来书写的-->
+    <ImageView
+        android:id="@+id/billIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_alignParentLeft="true"
+        tools:src="@drawable/payout_0"/>
+
+    <TextView
+        android:id="@+id/billName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/slv_item_height"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.87"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/billIcon"
+        tools:text="用途"/>
+
+    <TextView
+        android:id="@+id/billMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/slv_item_height"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.87"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentRight="true"
+        tools:text="金额"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/listView_Header"
+    android:paddingTop="60dp"
+    android:paddingBottom="10dp"
+    android:gravity="center">
+    <ImageView android:id="@+id/list_header_pull"
+        android:layout_width="9dip"
+        android:layout_height="25dip"
+        android:layout_gravity="center"/>
+    <TextView android:id="@+id/list_header_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textSize="12dip"
+        android:textColor="#192F06"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:text="下拉可以刷新"/>
+    <!--<RelativeLayout android:layout_width="180dip"-->
+        <!--android:layout_height="wrap_content">-->
+        <!-- -->
+    <!--</RelativeLayout>-->
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/background" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/countBar"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:fitsSystemWindows="true"
+        android:background="#3e9ed1"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_today"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"/>
+            <ImageView
+                android:id="@+id/back_today"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/date_time"
+                android:src="@drawable/back_today"
+                android:onClick="backToList"/>
+        </RelativeLayout>
+
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/linechart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/transparent"/>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:textSize="13sp">-->
+            <!--<Button-->
+                <!--android:id="@+id/moneyhint_payout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="支出"-->
+                <!--android:layout_gravity="left|bottom"-->
+                <!--android:gravity="left|center_vertical"-->
+                <!--android:background="@android:color/transparent"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/money_payout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/money_count"-->
+                <!--android:layout_gravity="right|bottom"-->
+                <!--android:gravity="right|center_vertical"-->
+                <!--android:background="@android:color/transparent"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:textSize="13sp">-->
+            <!--<Button-->
+                <!--android:id="@+id/moneyhint_income"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="收入"-->
+                <!--android:layout_gravity="left|bottom"-->
+                <!--android:gravity="left|center_vertical"-->
+                <!--android:background="@android:color/transparent"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/money_income"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/money_count"-->
+                <!--android:layout_gravity="right|bottom"-->
+                <!--android:gravity="right|center_vertical"-->
+                <!--android:background="@android:color/transparent"/>-->
+        <!--</LinearLayout>-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:fitsSystemWindows="true">
+            <Button
+                android:id="@+id/money_ountin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payout"
+                android:textSize="13sp"
+                android:layout_gravity="left|bottom"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="30dp"
+                android:onClick="money_ountin_Clicked"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/money_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money_count"
+                android:textSize="13sp"
+                android:layout_gravity="right|bottom"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="30dp"
+                android:onClick="money_count_Clicked"
+                android:background="@android:color/transparent"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <me.wizos.billorcs.BillWrap
+        android:id="@+id/billwrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/countBar">
+        <me.wizos.billorcs.sdlv.SlideAndDragListView
+            android:id="@+id/billlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#e9e9e9"
+            android:dividerHeight="0.01dp"
+            android:headerDividersEnabled="false"
+            android:layout_marginTop="-0.1dp"
+            android:background="#ffffff"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+        </me.wizos.billorcs.sdlv.SlideAndDragListView>
+    </me.wizos.billorcs.BillWrap>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/bill_menu"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:src="@drawable/bill_menu"
+        android:onClick="billMenu_Clicked"/>
+
+
+</RelativeLayout>
