@@ -5,7 +5,7 @@
     android:id="@+id/w1"
     android:orientation="vertical">
 
-    <me.wizos.billorcs.view.ExpandGridView
+    <me.wizos.billing.view.ExpandGridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

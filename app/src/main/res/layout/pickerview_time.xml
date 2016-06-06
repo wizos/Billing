@@ -17,33 +17,33 @@
         android:background="@android:color/white"
         android:orientation="horizontal">
 
-        <me.wizos.billorcs.pickerview.lib.WheelView
+        <me.wizos.billing.pickerview.lib.WheelView
             android:id="@+id/year"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="-10dp"
             android:layout_weight="1" />
 
-        <me.wizos.billorcs.pickerview.lib.WheelView
+        <me.wizos.billing.pickerview.lib.WheelView
             android:id="@+id/month"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <me.wizos.billorcs.pickerview.lib.WheelView
+        <me.wizos.billing.pickerview.lib.WheelView
             android:id="@+id/day"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <me.wizos.billorcs.pickerview.lib.WheelView
+        <me.wizos.billing.pickerview.lib.WheelView
             android:id="@+id/hour"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="-10dp"
             android:layout_weight="1.1" />
 
-        <me.wizos.billorcs.pickerview.lib.WheelView
+        <me.wizos.billing.pickerview.lib.WheelView
             android:id="@+id/min"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

@@ -130,7 +130,7 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
-    <me.wizos.billorcs.BillWrap
+    <me.wizos.billing.BillWrap
         android:id="@+id/billwrap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -139,7 +139,7 @@
         android:layout_marginBottom="30dp"
         android:background="@android:color/transparent"
         android:layout_below="@id/countBar">
-        <me.wizos.billorcs.sdlv.SlideAndDragListView
+        <me.wizos.billing.sdlv.SlideAndDragListView
             android:id="@+id/billlist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -150,8 +150,8 @@
             android:background="#ffffff"
             android:paddingLeft="8dp"
             android:paddingRight="8dp">
-        </me.wizos.billorcs.sdlv.SlideAndDragListView>
-    </me.wizos.billorcs.BillWrap>
+        </me.wizos.billing.sdlv.SlideAndDragListView>
+    </me.wizos.billing.BillWrap>
 
 
 
