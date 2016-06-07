@@ -1,4 +1,4 @@
 # Billing
 
-ЅШНј
-![ЅШНј](doc/view.jpg)
+ж€Єе›ѕ
+![ж€Єе›ѕ](doc/view.jpg)
